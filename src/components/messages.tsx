@@ -1,6 +1,9 @@
 
 import * as React from 'react';
 import * as SocketIOClient from 'socket.io-client';
+import { AppBar, Paper } from 'material-ui';
+import * as MUI from 'material-ui';
+import { WithStyles, createStyles } from '@material-ui/core';
 
 interface MessagesProps {
   title: string
@@ -48,6 +51,7 @@ const Messages: React.FunctionComponent<MessagesProps> = (props: MessagesProps) 
   console.log(messages);
   return (
     <>
+      {/* <MUI.AppBar>{props.title}</MUI.AppBar> */}
       <h2>{props.title}</h2>
       <ul>{messages.data.map((data: Message) => <li>{data.text}</li>)}</ul>
       <form onSubmit={handleSubmit}>

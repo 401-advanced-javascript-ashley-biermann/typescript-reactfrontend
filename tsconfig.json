@@ -9,6 +9,9 @@
     ],
     "jsx": "react",
     "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "strict": true,
     "noImplicitReturns": true,
     "sourceMap": true,
   }
